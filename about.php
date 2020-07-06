@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Sir Syed Govt Girls College</title>
+    <title>Sir Syed College</title>
   </head>
   <body>
   
