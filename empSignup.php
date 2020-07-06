@@ -21,7 +21,6 @@
   </head>
   <body>
     <?php
-    include 'connection.php';
     $query="select * from department";
     $result=mysqli_query($conn,$query);?>
 
@@ -61,7 +60,7 @@
               while($row=mysqli_fetch_array($result))
               {
               ?>
-                <option value="<?php $row['Dep_Id']?>"><?php echo $row['Dep_Name']?></option>
+                <option value="<?php echo $row['Dep_Id']?>"><?php echo $row['Dep_Name']?></option>
                 <?php
                 }
                 ?>
@@ -69,7 +68,7 @@
               </div>
               <div class="form-group">
                 <label>Email or Username</label>
-                <input type="email" name="EmpEmail"placeholder="example@gmail.com" required>
+                <input type="email" name="EmpEmail" placeholder="example@gmail.com" required>
               </div>
               <div class="form-group">
                 <label>Password</label>
