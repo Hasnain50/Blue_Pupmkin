@@ -21,6 +21,8 @@
   </head>
   <body>
     <?php
+    include 'connection.php';
+
     $query="select * from department";
     $result=mysqli_query($conn,$query);?>
 
