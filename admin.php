@@ -16,7 +16,7 @@
         if($r){
             header('location:adminLogin.php');
         }else {
-            header('location:adminSignup.php?error=Sign up Failed');
+            header('location:adminSignup.php?error=' .mysqli_error($conn));
         }
     } else if(isset($_POST['adminLogin'])){
         $email = $_POST['email'];
@@ -36,10 +36,10 @@
 
               header('location:index.php?success=succsessfull');
             } else {
-                header('location:AdminLogin.php?error=Login Failed');
+                header('location:adminLogin.php?error=Login Failed');
             }    
         } else {
-            header('location:AdminLogin.php?error=Please fill all the textboxes');
+            header('location:adminLogin.php?error=Please fill all the textboxes');
         }      
           }
       
